@@ -66,9 +66,7 @@ public class MainActivity extends Activity {
         intentFilter = new IntentFilter();
         intentFilter.addAction("SMS_RECEIVED_ACTION");
 
-        np1 = (NumberPicker) findViewById(R.id.numberPicker1);
-        np2 = (NumberPicker) findViewById(R.id.numberPicker2);
-        np3 = (NumberPicker) findViewById(R.id.numberPicker3);
+
         cislo = (EditText) findViewById(R.id.cislo);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
@@ -88,6 +86,9 @@ public class MainActivity extends Activity {
     }
 
     public void Time(View v) {//dodelat
+        np1 = (NumberPicker) findViewById(R.id.numberPicker1);
+        np2 = (NumberPicker) findViewById(R.id.numberPicker2);
+        np3 = (NumberPicker) findViewById(R.id.numberPicker3);
         this.timer = ((np1.getValue() * 60 * 60) + (np2.getValue() * 60) + np3.getValue());
         System.out.println(this.timer);
     }

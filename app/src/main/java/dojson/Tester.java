@@ -95,7 +95,7 @@ public class Tester {
                 System.out.println(collectionType.toString());
                 MsgPack<ContactCo> extractedPackC = gson.fromJson(encodedMessage, collectionType);
 
-                // Prostor pro vlasni kod tykajici se zpracovani MessageCo
+
                 break;
             default:
                 break;
